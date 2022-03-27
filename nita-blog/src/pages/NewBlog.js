@@ -1,30 +1,10 @@
-import * as React from "react";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
+import { useState } from "react";
+import { RichTextEditor } from "@mantine/rte";
 
-export default function ActionAreaCard() {
-  return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
-          alt="green iguana"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-  );
+const initialValue =
+  "<p>Your initial <b>html value</b> or an empty string to init editor without value</p>";
+
+export default function Demo() {
+  const [value, onChange] = useState(initialValue);
+  return <RichTextEditor value={value} onChange={onChange} />;
 }
