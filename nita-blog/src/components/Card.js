@@ -7,7 +7,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { Container } from "@mui/material";
 
-const bull = (
+const bullet = (
   <Box
     component="span"
     sx={{
@@ -26,11 +26,15 @@ export default function BasicCard() {
     <Container>
       <Card sx={{ minWidth: 275 }}>
         <CardContent>
-          <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+          <Typography
+            sx={{ fontSize: 14 }}
+            color="text.secondary"
+            gutterkBottom
+          >
             Word of the Day
           </Typography>
           <Typography variant="h5" component="div">
-            be{bull}nev{bull}o{bull}lent
+            be{bullet}nev{bullet}o{bullet}lent
           </Typography>
           <Typography sx={{ mb: 1.5 }} color="text.secondary">
             adjective
