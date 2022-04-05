@@ -62,7 +62,7 @@ const Profile = () => {
   return (
     <div className={classes.container}>
       <div className={classes.picdiv}>
-        <img className={classes.profilepc} src="x.jpg" alt="image here" />
+        <img className={classes.profilepc} src="vk.jpg" alt="image here" />
       </div>
       <div className={classes.info}>
         <p>Vaibhav Kumar Sinha</p>
@@ -72,7 +72,8 @@ const Profile = () => {
       <div className={classes.about}>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-          nesciunt.
+          nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Quos, amet.
         </p>
       </div>
       <div className={classes.socialMedia}>
