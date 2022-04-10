@@ -4,7 +4,6 @@ import { makeStyles } from "@mui/styles";
 import { TextInput } from "@mantine/core";
 import Button from "@mui/material/Button";
 import { InputLabel, Paper } from "@mui/material";
-// import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 
 const useStyles = makeStyles({
@@ -16,6 +15,14 @@ const useStyles = makeStyles({
   },
   TextField: {
     marginBottom: "15px",
+  },
+
+  gridContainer: {
+    "@media (min-width: 780px)": {
+      maxWidth: "65%",
+      marginLeft: "auto",
+      marginRight: "auto",
+    },
   },
 });
 
@@ -48,7 +55,6 @@ export default function NewBlog() {
   const classes = useStyles();
   const [value, onChange] = useState("");
   const [valueTitle, onChangeTitle] = useState("");
-  // const valueTitle = "";
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -56,7 +62,12 @@ export default function NewBlog() {
   };
 
   return (
-    <Grid container alignItems="center" direction="column">
+    <Grid
+      container
+      alignItems="center"
+      direction="column"
+      className={classes.gridContainer}
+    >
       <Grid item xs={12} sm={12}>
         <Paper className={classes.editorContainer}>
           <div>
@@ -69,6 +80,7 @@ export default function NewBlog() {
               required
             />
             <InputLabel required>Write Blog:</InputLabel>
+            {/* <div className={classes.textArea}> */}
             <RichTextEditor
               value={value}
               onChange={onChange}
@@ -76,6 +88,7 @@ export default function NewBlog() {
               sticky={true}
               // labels={"Start Typing"}
             />
+            {/* </div> */}
           </div>
           <Grid item sx={{ textAlign: "right" }}>
             {/* <Box onSubmit={handleSubmit}> */}
