@@ -1,5 +1,5 @@
+import styles from "./ViewBlog.module.css";
 // title , body , photo
-
 const BlogDetails = () => {
   //   const { id } = useParams();
   //   const {
@@ -25,21 +25,21 @@ const BlogDetails = () => {
       {true && (
         <div>
           {/* <h2>{blog.title}</h2> */}
-          <article className="Anime">
-            <div className="card">
+          <article className={styles.Anime}>
+            <div className={styles.card}>
               <h1> Damn</h1>
               {/* <p>Written by {blog.author}</p> */}
-              <figure class="size4">
-                <img class="size4" src="sample.jpg" alt="" />
+              <figure className={styles.size4}>
+                <img className={styles.size4} src="sample.jpg" alt="" />
               </figure>
-              <figure-caption class="size3">
+              <figure-caption className={styles.size3}>
                 <em>
-                  <p class="caption">Anime Arts</p>
+                  <p className={styles.caption}>Anime Arts</p>
                 </em>
               </figure-caption>
 
               <div>
-                <p className="try">
+                <p>
                   <em>Anime</em> is quite popular nowadays and it's popularity
                   is not just limited to kids and teenagers. It's popularity is
                   exploding in West( Western Nations) in recent years. Just to
