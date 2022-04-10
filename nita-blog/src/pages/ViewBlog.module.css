@@ -76,7 +76,7 @@ img.size4 {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-img {
+.Anime img {
   border-radius: 5px 5px 0 0;
 }
 
@@ -84,26 +84,26 @@ img {
   padding: 2px 16px;
 }
 
-h1 {
+.Anime h1 {
   font: 700 2rem/1.2 "Roboto";
   margin-bottom: 1.2rem;
   color: hsl(000 0% 33%);
   /* text-shadow: 0 0.2rem 5px hsl(120 50% 33%); */
 }
-h2 {
+.Anime h2 {
   font: 700 1.2rem/1.2 "Quicksand";
   color: hsl(000 0% 33%);
   text-shadow: 0 0.2rem 5px hsl(55 50% 33%);
 }
-h3 {
+.Anime h3 {
   font: 400 1.2rem/1.2 "Quicksand";
 }
-time {
+.Anime time {
   font: 700 1rem/1.2 "Quicksand";
   color: hsl(240 50% 33%);
   margin-bottom: 1rem;
 }
-p {
+.Anime p {
   font: 400 1rem/1.5 "Quicksand";
   margin-bottom: 2.4rem;
   color: hsl(000 0% 33%);
