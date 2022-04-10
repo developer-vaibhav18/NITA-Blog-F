@@ -62,6 +62,7 @@ const ListOfUsers = () => {
                         color="text.primary"
                       >
                         {/* Batch/Branch */}
+                        2019-23, CSE
                       </Typography>
                       {/* {" — I'll be in your neighborhood doing errands this…"} */}
                     </>
