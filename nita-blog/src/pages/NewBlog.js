@@ -52,15 +52,13 @@ export default function NewBlog() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // const data = new FormData(event.currentTarget);
-    // eslint-disable-next-line no-console
     console.log(value, valueTitle);
   };
 
   return (
     <Grid container alignItems="center" direction="column">
       <Grid item xs={12} sm={12}>
-        <Paper className={classes.editorContainer} onSubmit={handleSubmit}>
+        <Paper className={classes.editorContainer}>
           <div>
             <InputLabel required>Enter Title:</InputLabel>
             <TextInput
