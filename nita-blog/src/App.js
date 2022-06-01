@@ -11,7 +11,6 @@ import ListOfUsers from "./pages/ListOfUsers";
 import EditProfile from "./pages/EditProfile";
 import Navbar from "./pages/Navbar";
 import ResetPasswordPassword from "./pages/ResetPasswordPassword";
-import BasicCard from "./components/Card";
 
 function App() {
   return (

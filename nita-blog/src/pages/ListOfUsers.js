@@ -116,14 +116,9 @@ const ListOfUsers = () => {
             </ListItem>
           </List>
         </Paper>
-      </Grid>{" "}
+      </Grid>
     </Grid>
   );
 };
 
-// export default function ListOfUsers() {
-//   return (
-
-//   );
-// }
 export default ListOfUsers;

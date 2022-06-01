@@ -27,9 +27,12 @@ const useStyles = makeStyles({
 });
 
 var handleImageUpload = function (file) {
+  // console.log(file);
   return new Promise(function (resolve, reject) {
+    // console.log(file);
     var formData = new FormData();
     formData.append("image", file);
+    // console.log("aand");
     fetch(
       "https://api.imgbb.com/1/upload?key=dcdbaa0a689c529dd200cfe147cdef01",
       {
@@ -38,6 +41,7 @@ var handleImageUpload = function (file) {
       }
     )
       .then(function (response) {
+        console.log("success");
         return response.json();
       })
       .then(function (result) {
@@ -45,7 +49,7 @@ var handleImageUpload = function (file) {
         return resolve(result.data.url);
       })
       .catch(function () {
-        // console.log("error");
+        console.log("error");
         return reject(new Error("Upload failed"));
       });
   });

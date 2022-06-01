@@ -9,24 +9,6 @@ import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 
-function Copyright(props) {
-  return (
-    <Typography
-      variant="body1"
-      color="text.secondary"
-      align="center"
-      {...props}
-    >
-      {"Copyright ©"}
-      <Link color="inherit" href="/">
-        IamCHUTAD
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </Typography>
-  );
-}
-
 export default function ResetPasswordPassword() {
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -74,7 +56,6 @@ export default function ResetPasswordPassword() {
           </Button>
         </Box>
       </Box>
-      <Copyright sx={{ mt: 5 }} />
     </Container>
   );
 }
