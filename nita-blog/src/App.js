@@ -4,7 +4,6 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import ResetPasswordEmail from "./pages/ResetPasswordEmail";
 import Profile from "./pages/Profile";
-import ViewBlog from "./pages/ViewBlog";
 import NewBlog from "./pages/NewBlog";
 import EmailVerification from "./pages/EmailVerification";
 import ListOfUsers from "./pages/ListOfUsers";
@@ -16,7 +15,6 @@ function App() {
   return (
     <Router>
       <Navbar />
-      {/* <BasicCard /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -26,7 +24,6 @@ function App() {
         <Route path="/emailVerification" element={<EmailVerification />} />
         <Route path="/ListOfUsers" element={<ListOfUsers />} />
         <Route path="/Profile" element={<Profile />} />
-        {/* <Route path="/ViewBlog/*" element={<ViewBlog />} /> */}
         <Route path="/NewBlog" element={<NewBlog />} />
         <Route path="/EditProfile" element={<EditProfile />} />
       </Routes>
