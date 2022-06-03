@@ -41,7 +41,7 @@ export default function ResetPasswordPassword() {
             required
             fullWidth
             name="password"
-            label="Password"
+            label="New Password"
             type="password"
             id="password"
             autoComplete="new-password"

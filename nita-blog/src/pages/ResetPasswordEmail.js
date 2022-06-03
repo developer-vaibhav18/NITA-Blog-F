@@ -1,4 +1,4 @@
-import * as React from "react";
+import { useState } from "react";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -10,6 +10,14 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 
 export default function ResetPasswordEmail() {
+  const [invalid, setInvalid] = useState({
+    email: false,
+  });
+  const [disableSubmit, setDisableSubmit] = useState(false);
+  const [errorMessage, setErrorMessage] = useState({
+    email: "",
+  });
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -44,12 +52,15 @@ export default function ResetPasswordEmail() {
             label="Email Address"
             name="email"
             autoComplete="email"
+            helperText={errorMessage.email}
+            error={invalid.email}
           />
           <Button
             type="submit"
             fullWidth
             variant="contained"
             sx={{ mt: 3, mb: 2 }}
+            disabled={disableSubmit}
           >
             Send verification Link
           </Button>

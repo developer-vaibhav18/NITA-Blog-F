@@ -66,7 +66,7 @@ img.size4 {
 
 .card {
   box-shadow: 2px 8px 12px 0 rgb(43, 22, 41);
-  background-color: #ff5a2841;
+  background-color: #0051f241;
   transition: 0.3s;
   width: 100%;
   border-radius: 5px;
@@ -86,7 +86,7 @@ img.size4 {
 
 .Anime h1 {
   font: 700 2rem/1.2 "Roboto";
-  margin-bottom: 1.2rem;
+  /* margin-bottom: 1.2rem; */
   color: hsl(000 0% 33%);
   /* text-shadow: 0 0.2rem 5px hsl(120 50% 33%); */
 }
@@ -105,7 +105,7 @@ img.size4 {
 }
 .Anime p {
   font: 400 1rem/1.5 "Quicksand";
-  margin-bottom: 2.4rem;
+  /* margin-bottom: 2.4rem; */
   color: hsl(000 0% 33%);
   text-align: justify;
   margin-left: 2.5%;

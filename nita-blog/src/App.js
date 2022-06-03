@@ -26,7 +26,7 @@ function App() {
         <Route path="/emailVerification" element={<EmailVerification />} />
         <Route path="/ListOfUsers" element={<ListOfUsers />} />
         <Route path="/Profile" element={<Profile />} />
-        <Route path="/ViewBlog" element={<ViewBlog />} />
+        {/* <Route path="/ViewBlog/*" element={<ViewBlog />} /> */}
         <Route path="/NewBlog" element={<NewBlog />} />
         <Route path="/EditProfile" element={<EditProfile />} />
       </Routes>
